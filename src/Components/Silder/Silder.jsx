@@ -9,15 +9,22 @@ import img3 from "../../images/3.jpg";
 import img4 from "../../images/4.jpg";
 import img5 from "../../images/5.jpg";
 import img6 from "../../images/6.jpg";
+import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleLeft } from "react-icons/fa";
 
 export default function Silder() {
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
+    extArrow: <FaArrowCircleRight />,
+    prevArrow: <FaArrowCircleLeft />,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
