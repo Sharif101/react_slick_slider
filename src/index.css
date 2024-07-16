@@ -20,3 +20,11 @@ p {
   margin: 0;
   padding: 0;
 }
+
+html {
+  --cursor-color: #333;
+}
+
+html.dark-mode {
+  --cursor-color: #fff;
+}

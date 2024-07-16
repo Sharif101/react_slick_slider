@@ -7,6 +7,8 @@ export default function Check() {
   return (
     <div>
       <input type="text" onChange={(e) => setName(e.target.value)} />
+      <input type="text" name="" id="" />
+      <input type="email" />
     </div>
   );
 }
